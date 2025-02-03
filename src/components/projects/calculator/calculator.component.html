@@ -1,0 +1,28 @@
+<div id="calculatorCont">
+  <input [(ngModel)]="output" type="text" placeholder="0" />
+  <div id="calBody">
+    <div (click)="putVal('A')" class="operation childNum">%</div>
+    <div (click)="putVal('^')" class="operation childNum">^</div>
+    <div (click)="resetVal()" class="operation childNum">C</div>
+    <div (click)="putVal('/')" class="operation childNum">/</div>
+    <div (click)="putVal('7')" class="childNum">7</div>
+    <div (click)="putVal('8')" class="childNum">8</div>
+    <div (click)="putVal('9')" class="childNum">9</div>
+    <div (click)="putVal('*')" class="operation childNum">*</div>
+    <div (click)="putVal('4')" class="childNum">4</div>
+    <div (click)="putVal('5')" class="childNum">5</div>
+    <div (click)="putVal('6')" class="childNum">6</div>
+    <div (click)="putVal('+')" class="operation childNum">+</div>
+    <div (click)="putVal('1')" class="childNum">1</div>
+    <div (click)="putVal('2')" class="childNum">2</div>
+    <div (click)="putVal('3')" class="childNum">3</div>
+
+    <div (click)="calculateResult()" class="equal">=</div>
+
+    <div (click)="putVal('.')" class="childNum">.</div>
+    <div (click)="putVal('0')" class="childNum">0</div>
+
+    <div (click)="del()" class="childNum">DEL</div>
+
+  </div>
+</div>

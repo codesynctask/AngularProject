@@ -1,0 +1,11 @@
+footer{
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+}

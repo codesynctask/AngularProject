@@ -1,0 +1,25 @@
+#calculator_cont{
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+#calculator_cont #nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 3vw;
+    margin: 10px ;
+    margin-bottom: 5vh;
+}
+#calculator_cont #nav a{
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    /* border: 1px solid whitesmoke; */
+    color: white;
+}

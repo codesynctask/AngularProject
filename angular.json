@@ -31,7 +31,7 @@
             ],
             "scripts": []
           },
-          "configurations": {
+          "configurations": { 
             "production": {
               "budgets": [
                 {
@@ -92,5 +92,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

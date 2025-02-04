@@ -1,0 +1,123 @@
+#todoCont{
+    /* height: 70vh; */
+    min-width: fit-content;
+    width: 40vw;
+    min-width: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+#todoCont #primary{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 10px;
+    position: relative;
+}
+#todoCont #primary input{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    text-indent: 20px;
+}
+
+#todoCont #primary button{
+    min-width: fit-content;
+    padding: 0 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #00ffcc;
+    transition: 0.4s background-color;
+}
+#todoCont #primary button:hover{
+    background-color: #0fb190;
+}
+
+#todoCont #primary button:active{
+    color: white;
+    font-weight: 900;
+}
+#todoCont #primary #optionBtn{
+    position: absolute;
+    right: -5%;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+
+}
+#todoCont #secondary{
+    height: 60px;
+    width: 100%;
+    background-color: orange;
+    display: none;
+    /* code later */
+}
+
+
+/* todo Nav */
+#todoNav{
+    /* background-color: red; */
+    outline: 1px solid rgba(255, 255, 255, 0.29);
+
+    width: 100%;
+    height: fit-content;
+    
+}
+
+/* todo Body */
+
+#todoBody{
+    width: 100%;
+    min-height: fit-content;
+    border: 5px inset black;
+    outline: 1px solid rgba(255, 255, 255, 0.29);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3vh 0;
+    gap: 10px;
+}
+#todoBody > .task{
+   margin: auto auto 15px auto;
+    width: 95%;
+    color: white;
+    /* border: 1px solid white; */
+    outline: 1px solid rgba(255, 255, 255, 0.614);
+
+    text-transform: capitalize;
+    font-weight: 900;
+    padding: 8px 10px  ;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.8s;
+}
+#todoBody > .task > img{
+   height: 30px;
+   width: 30px;
+   
+}
+
+.cutEffect{
+    /* text-transform: l; */
+    text-decoration: line-through;
+    opacity: 0.2;
+}
+
+

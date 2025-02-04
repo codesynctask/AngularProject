@@ -1,19 +1,22 @@
 #calculatorCont{
     height: 70vh;
     width: 350px;
-    border: 1px solid white;
+    border: 10px inset black;
+    outline: 1px solid whitesmoke;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    
+    font-size: 1.2rem;
 
 }
 
 #calculatorCont input{
     width: 100%;
-    height: 15%;
+    height: 25%;
     border: 10px solid black;
     border-radius: 20px;
     font-size: 30px;
@@ -46,8 +49,16 @@
     border: 1px solid white;
 
 }
+
+#calBody > div:active{
+    color: blue;
+    transform: scale(1.07);
+}
+#calBody > div::selection{
+    user-select: none;
+}
 .operation{
-    background-color: rgba(147, 0, 108, 0.436);
+    background-color: rgba(255, 166, 0, 0.724);
 }
  
 .equal{

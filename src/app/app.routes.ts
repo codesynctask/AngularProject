@@ -8,6 +8,7 @@ import { CalculatorComponent } from '../components/projects/calculator/calculato
 import { BlogSiteComponent } from '../components/projects/blog-site/blog-site.component';
 import { ECommerceAppComponent } from '../components/projects/e-commerce-app/e-commerce-app.component';
 import { ToDoAppComponent } from '../components/projects/to-do-app/to-do-app.component';
+import { ProjectHomeComponent } from '../components/projects/project-home/project-home.component';
 
 export const routes: Routes = [
     {
@@ -22,6 +23,10 @@ export const routes: Routes = [
         path:"projects",
         component:ProjectsComponent,
         children:[
+            {
+                path:"",
+                component:ProjectHomeComponent
+            },
             {
                 path:"calculator",
                 component:CalculatorComponent

@@ -29,3 +29,13 @@ body{
     border: 1px solid white;
     border-radius: 10px;
 }
+div{
+    border-radius: 10px;
+}
+button{
+    cursor: pointer;
+    font-weight: 900;
+}
+img{
+    cursor: pointer;
+}

@@ -1,1 +1,36 @@
-<p>to-do-app works!</p>
+<div id="todoCont">
+  <div id="todoNav">
+    <div id="primary">
+      <!-- Primary -->
+      <input
+        autocomplete="off"
+        [(ngModel)]="inpData"
+        type="text"
+        placeholder="Enter Task..."
+        name="task_ame"
+        id=""
+      />
+      <button (click)="addTask()">Add Task</button>
+      <!-- <div id="optionBtn">Show More Option</div> -->
+    </div>
+    <div id="secondary"><!-- Secondry --></div>
+  </div>
+
+  <div id="todoBody" *ngIf="toDoDataArray.length !== 0">
+    <div
+      class="task {{ toDo.taskClassName }}"
+      *ngFor="let toDo of toDoDataArray"
+    >
+      <img
+        (click)="completeTask(toDo.name)"
+        *ngIf="!toDo.isCompleted"
+        [src]="toDoStatusIcon"
+        alt="todoFalse"
+      />
+      <img *ngIf="toDo.isCompleted" src="svg/todoTrue.svg" alt="todoFalse" />
+      {{ toDo.name }}
+    </div>
+  </div>
+</div>
+
+<!-- (click)="completeTask(toDo)" -->

@@ -1,11 +1,11 @@
-#calculator_cont{
+#project_nav{
     justify-content: start;
     align-items: center;
     flex-direction: column;
    
 }
 
-#calculator_cont #nav{
+#project_nav #nav{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     margin: 10px ;
     margin-bottom: 5vh;
 }
-#calculator_cont #nav a{
+#project_nav #nav a{
     width: fit-content;
     padding: 10px 20px;
     border-radius: 10px;

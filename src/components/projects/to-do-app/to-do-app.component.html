@@ -1,4 +1,4 @@
-<div id="todoCont">
+<div id="todoCont" (loadeddata)="inpData='ijh'" >
   <div id="todoNav">
     <div id="primary">
       <!-- Primary -->
@@ -7,18 +7,37 @@
         [(ngModel)]="inpData"
         type="text"
         placeholder="Enter Task..."
-        name="task_ame"
-        id=""
+        name="task_name"
+        
       />
-      <button (click)="addTask()">Add Task</button>
-      <!-- <div id="optionBtn">Show More Option</div> -->
+      <button  (click)="addTask()">Add Task</button>
+      <div
+        (click)="isSecNavVisible = !isSecNavVisible"
+        title="Show secondary nav"
+        id="optionBtn"
+      >
+        (●'◡'●)
+      </div>
     </div>
-    <div id="secondary"><!-- Secondry --></div>
+    <div *ngIf="isSecNavVisible" id="secondary">
+      <!-- Secondry -->
+      <div (click)="delAllTask()" class="option">Delete All Task</div>
+      <div
+        (click)="saveTaskToLocalStorage()"
+        class="option"
+        title="Save task to Local"
+      >
+        Save All Task
+      </div>
+      <div (click)="loadTask()" class="option" title="Load task from Local">
+        Load Task
+      </div>
+    </div>
   </div>
 
-  <div id="todoBody" *ngIf="toDoDataArray.length !== 0">
+  <div  id="todoBody" *ngIf="toDoDataArray.length !== 0 ">
     <div
-      class="task {{ toDo.taskClassName }}"
+      class="task {{ toDo.taskClassName }}" 
       *ngFor="let toDo of toDoDataArray"
     >
       <img

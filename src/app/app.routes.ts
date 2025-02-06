@@ -9,6 +9,7 @@ import { BlogSiteComponent } from '../components/projects/blog-site/blog-site.co
 import { ECommerceAppComponent } from '../components/projects/e-commerce-app/e-commerce-app.component';
 import { ToDoAppComponent } from '../components/projects/to-do-app/to-do-app.component';
 import { ProjectHomeComponent } from '../components/projects/project-home/project-home.component';
+import { ImgSliderComponent } from '../components/projects/img-slider/img-slider.component';
 
 export const routes: Routes = [
     {
@@ -42,6 +43,10 @@ export const routes: Routes = [
             {
                 path:"toDoApp",
                 component:ToDoAppComponent
+            },
+            {
+                path:"imgSlider",
+                component:ImgSliderComponent
             },
         ]
     },

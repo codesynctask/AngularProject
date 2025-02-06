@@ -1,0 +1,11 @@
+#home-cont{
+    /* background-color: red; */
+    height: 100vh;
+    background-image: url(/img/spider.jpg);
+    background-size: cover;
+    width: 90vw;
+    margin: auto;
+    margin-top: 5vh;
+    
+    
+}

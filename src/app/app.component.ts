@@ -11,4 +11,11 @@ import { FooterComponent } from '../components/footer/footer.component';
 })
 export class AppComponent {
   title = 'angular-projects';
+
+  // handleMouseMove(){
+  //   let x = MouseEvent.prototype.pageX
+  //   console.log(x);
+  // }
+
+  
 } 

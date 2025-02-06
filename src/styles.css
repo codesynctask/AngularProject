@@ -14,19 +14,20 @@ html,body{
 body{
     display: flex;
     flex-direction: column;
+    min-height: fit-content;
 
 }
 
 .page{
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    min-width: 90vw;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .isLinkActive{
-    border: 1px solid white;
+    border: 1px solid #c41816 ;
     border-radius: 10px;
 }
 div{

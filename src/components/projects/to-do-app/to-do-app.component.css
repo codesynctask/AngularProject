@@ -50,23 +50,52 @@
     font-weight: 900;
 }
 #todoCont #primary #optionBtn{
-    position: absolute;
-    right: -5%;
     overflow: hidden;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    background-color: red;
+    min-width: fit-content;
+    margin: 0 10px;
+    color: #c41816;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    border-radius: 15px;
+    padding: 0 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+    user-select: none;
+    -webkit-user-select: none;
 
+}
+#todoCont #primary #optionBtn:hover{
+    border: 1px solid white;
 }
 #todoCont #secondary{
-    height: 60px;
-    width: 100%;
-    background-color: orange;
-    display: none;
-    /* code later */
+    height: 40px;
+    width: 95%;
+    margin: 5px auto;
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    padding: 5px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
 }
-
+#todoCont #secondary .option{
+    /* background-color: red; */
+    border: 1px solid  rgba(220, 220, 220, 0.379);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.911);
+}
+#todoCont #secondary .option:hover{
+    color: #c41816;
+}
 
 /* todo Nav */
 #todoNav{
